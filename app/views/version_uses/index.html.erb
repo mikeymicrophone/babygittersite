@@ -1,0 +1,17 @@
+<h1>versions in use</h1>
+
+<table>
+  <tr>
+    <th>site</th>
+    <th>version</th>
+  </tr>
+
+<% for version_use in @version_uses %>
+  <tr>
+    <td><%= link_to_name version_use.site %></td>
+    <td><%= link_to_name version_use.version, 'maintainer' %></td>
+    <td><%= link_to 'show', version_use %></td>
+    <td><%= link_to 'edit', edit_version_use_path(version_use) %></td>
+  </tr>
+<% end %>
+</table>

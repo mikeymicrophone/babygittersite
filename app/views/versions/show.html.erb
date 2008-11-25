@@ -1,0 +1,26 @@
+<p>
+  <b>Maintainer:</b>
+  <%=h @version.maintainer %>
+</p>
+
+<p>
+  <b>Repo path:</b>
+  <%=h @version.repo_path %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @version.description %>
+</p>
+
+<p>
+	this version of babygitter implements <%= @version.features.count %> features:
+	<br><br>
+	<% @version.features.each do |f| %>
+	  <%= link_to_name f %>
+	<% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_version_path(@version) %> |
+<%= link_to 'Back', versions_path %>

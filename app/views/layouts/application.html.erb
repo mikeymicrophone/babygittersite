@@ -2,10 +2,17 @@
 <html>
   <head>
 		<title>
-			<%= @title || 'babygitter' %>
+			<%= @title || 'babygitter - the little guy' %>
 		</title>
 	</head>
 	<body>
+		<div id="navigation">
+			<ul id="controllers">
+				<li><%= link_to 'versions', versions_path %></li>
+				<li><%= link_to 'sites', sites_path %></li>
+				<li><%= link_to 'features', features_path %></li>
+			</ul>
+		</div>
 		<%= yield %>
 	</body>
 </html>

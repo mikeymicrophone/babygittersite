@@ -1,0 +1,12 @@
+<h1>babygitter features</h1>
+
+<table>
+<% for feature in @features %>
+  <tr>
+    <td><%= link_to_name feature %></td>
+    <td><%=h feature.description %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'new feature', new_feature_path %>

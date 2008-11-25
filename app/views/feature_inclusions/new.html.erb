@@ -1,0 +1,19 @@
+<h1>New feature_inclusion</h1>
+
+<% form_for(@feature_inclusion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :version_id %><br />
+    <%= f.text_field :version_id %>
+  </p>
+  <p>
+    <%= f.label :feature_id %><br />
+    <%= f.text_field :feature_id %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', feature_inclusions_path %>

@@ -1,0 +1,22 @@
+<h2>
+  <%=h @site.name %>
+</h2>
+
+<p>
+  <%= link_to @site.url, @site.url %>
+</p>
+
+<p>
+  <b><%=h @site.description %></b>
+</p>
+
+<p>
+  <b>babygitter report (may not be public):</b>
+  <%= link_to @site.report_url, @site.report_url unless @site.report_url.blank? %>
+</p>
+
+<p>
+	this site uses the version of babygitter maintained by <%= link_to_name @site.versions.first, 'maintainer' %>
+</p>
+
+<%= link_to 'view all sites', sites_path %>

@@ -1,0 +1,23 @@
+<h1>a few sites that use babygitter</h1>
+
+<table>
+  <tr>
+    <th>name</th>
+    <th>url</th>
+    <th>description</th>
+    <th>report url</th>
+  </tr>
+
+<% for site in @sites %>
+  <tr>
+    <td><%= link_to_name site %></td>
+    <td><%= link_to site.url, site.url %></td>
+    <td><%=h site.description %></td>
+    <td><%= link_to "#{site.name}'s babygitter report", site.report_url unless site.report_url.blank? %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'add a site', new_site_path %>

@@ -1,0 +1,18 @@
+<h2>
+  <%=h @feature.name %>
+</h2>
+
+<p>
+  <%=h @feature.description %>
+</p>
+
+<p>
+this feature is included in <%= @feature.versions.count %> versions of babygitter:
+<br><br>
+	<% @feature.versions.each do |v| %>
+		<%= link_to_name v, 'maintainer' %>
+	<% end %>
+</p>
+
+<%= link_to 'edit', edit_feature_path(@feature) %> |
+<%= link_to 'back', features_path %>

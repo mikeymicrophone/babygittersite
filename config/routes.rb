@@ -1,4 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :version_uses
+
+  map.resources :feature_inclusions
+
+  map.resources :features
+
+  map.resources :sites
+
+  map.resources :versions
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

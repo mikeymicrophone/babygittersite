@@ -1,0 +1,11 @@
+<p>
+  <b>version</b>
+  <%= link_to @feature_inclusion.version_id, @feature_inclusion.version %>
+</p>
+
+<p>
+  <%= link_to_name @feature_inclusion.feature %>
+</p>
+
+<%= link_to 'Edit', edit_feature_inclusion_path(@feature_inclusion) %> |
+<%= link_to 'Back', feature_inclusions_path %>

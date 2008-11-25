@@ -1,0 +1,20 @@
+<h1>Editing version_use</h1>
+
+<% form_for(@version_use) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :site_id %><br />
+    <%= f.text_field :site_id %>
+  </p>
+  <p>
+    <%= f.label :version_id %><br />
+    <%= f.text_field :version_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @version_use %> |
+<%= link_to 'Back', version_uses_path %>

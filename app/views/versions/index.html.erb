@@ -1,0 +1,23 @@
+<h1>versions of babygitter</h1>
+
+<table>
+  <tr>
+    <th>maintainer</th>
+    <th>repo path</th>
+    <th>description</th>
+  </tr>
+
+<% for version in @versions %>
+  <tr>
+    <td><%=h version.maintainer %></td>
+    <td><%= link_to version.repo_path, version.repo_path %></td>
+    <td><%=h version.description %></td>
+    <td><%= link_to 'show', version %></td>
+    <td><%= link_to 'edit', edit_version_path(version) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br>
+
+<%= link_to 'new version', new_version_path %>
