@@ -4,14 +4,17 @@
 		<title>
 			<%= @title || 'babygitter - the little guy' %>
 		</title>
+		<%= stylesheet_link_tag 'babygittersite' %>
 	</head>
 	<body>
 		<div id="navigation">
 			<ul id="controllers">
+				<li><%= link_to 'home', root_url %></li>
 				<li><%= link_to 'versions', versions_path %></li>
 				<li><%= link_to 'sites', sites_path %></li>
 				<li><%= link_to 'features', features_path %></li>
 			</ul>
+			<div class="clearfix"> </div>
 		</div>
 		<%= yield %>
 	</body>

@@ -1,0 +1,41 @@
+#navigation #controllers li a {
+	color: #2A993C;
+}
+
+#navigation #controllers li a:hover {
+	color: #809935;
+}
+
+#navigation ul {
+	list-style-type: none;
+}
+
+#navigation ul li {
+	margin-left: 13px;
+	float: left;
+}
+
+p {
+	font-family: arial;
+	font-size: 16px;
+	background-color: #D4CEAF;
+	padding: 4px;
+}
+
+p a {
+	color: #8D3899;
+}
+
+p a:visited {
+	color: #674399;
+}
+
+body {
+	background-color: #0C0D7E;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.clearfix {
+	clear: both;
+}
